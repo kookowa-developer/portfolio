@@ -9,8 +9,8 @@ const Works = () => {
   return (
     <div className='bg-[#edf2f8] py-5' id='works'>
         <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-10 md:my-16 justify-center'>
-            <span className='' onClick={()=>setToggle(false)}><Translate dictionary={{ru:'Мои',en:'My'}}>My</span>
-            <span className='text-[#313bac]'  onClick={()=>setToggle(false)}><Translate dictionary={{ru:'работы',en:'works'}}>Works</span>
+            <span className='' ><Translate dictionary={{ru:'Мои',en:'My'}}/></span>
+            <span className='text-[#313bac]'  ><Translate dictionary={{ru:'работы',en:'Works'}}/></span>
         </div>
         <div className='flex justify-center  flex-col items-center gap-4'>
 
@@ -25,8 +25,8 @@ const Works = () => {
                     <b >Stack:</b>
                     <p className='text-[15px]'>{item.stack}</p>
                    <div className='flex justify-center gap-5 md:justify-start mt-5'>
-                   <a  href={item.link} target='blank' type="button" class="text-white bg-[#313bac] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"  onClick={()=>setToggle(false)}><Translate dictionary={{ru:'Demo',en:'Demo'}}>Demo</a>
-                    <a href={item.github} target='blank' type="button" class="text-white bg-[#313bac] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onClick={()=>setToggle(false)}><Translate dictionary={{ru:'Код',en:'Code'}}>Code</a>
+                   <a  href={item.link} target='blank' type="button" class="text-white bg-[#313bac] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"  ><Translate dictionary={{ru:'Demo',en:'Demo'}}/></a>
+                    <a href={item.github} target='blank' type="button" class="text-white bg-[#313bac] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" ><Translate dictionary={{ru:'Код',en:'Code'}}/></a>
                    </div>
                 </div>
             </div>

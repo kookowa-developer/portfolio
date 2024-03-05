@@ -5,8 +5,10 @@ import ReduxImg from "../assets/redux.png";
 import Sass from "../assets/sass.png";
 import Social from './Social';
 import Translate from "../utils/Translate";
+import { Zoom,Fade,Flip } from 'react-reveal';
 
 export const Header = () => {
+
     return (
         <div className='px-3 lg:px-10 pt-[110px] lg:pt-0 bg-[#EDF2F8] w-full lg:h-[100vh] flex lg:flex-row flex-col items-center justify-center gap-10' id='home'>
             {/* Download CV  */}
@@ -15,12 +17,12 @@ export const Header = () => {
                     <div className='flex justify-center items-center bg-[white] gap-3 md:gap-10 w-full max-w-[350px] p-1 lg:p-3  rounded-[15px] shadow-lg'>
                         <p className='text-[35px] lg:text-[40px]'>👋</p>
                         <p className='flex flex-col'>
-                            <span className='text-slate-400 text-[18px] lg:text-[20px]' onClick={() => setToggle(false)}><Translate dictionary={{ ru: 'Здравствуйте, я', en: 'Hello, I am' }}>Hello, I am</span>
-                            <span className='font-bold text-[25px] lg:text-[30px]' onClick={() => setToggle(false)}><Translate dictionary={{ ru: 'Дилфуза', en: 'Dilfuza' }}>Dilfuza</span>
+                            <span className='text-slate-400 text-[18px] lg:text-[20px]' ><Translate dictionary={{ ru: 'Здравствуйте, я', en: 'Hello, I am' }} />Hello, I am</span>
+                            <span className='font-bold text-[25px] lg:text-[30px]' ><Translate dictionary={{ ru: 'Дилфуза', en: 'Dilfuza' }} />Dilfuza</span>
                         </p>
                     </div>
-                    <div className='w-full bg-[white] max-w-[300px] p-3 text-slate-400 text-[14px] lg:text-[18px] text-center  rounded-[15px] shadow-lg' onClick={() => setToggle(false)}><Translate dictionary={{ ru: 'ФРОНТЕНД/РЕАКТ РАЗРАБОТЧИК', en: 'FRONTEND/REACT DEVELOPER' }}>FRONTEND/REACT DEVELOPER</div>
-                    <a href='rezume.pdf' download type="button" class="text-white bg-[#313bac] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"  onClick={() => setToggle(false)}><Translate dictionary={{ ru: 'Скачать резюме', en: 'Downlaod CV' }}>Downlaod CV</a>
+                    <div className='w-full bg-[white] max-w-[300px] p-3 text-slate-400 text-[14px] lg:text-[18px] text-center  rounded-[15px] shadow-lg'><Translate dictionary={{ ru: 'ФРОНТЕНД/РЕАКТ РАЗРАБОТЧИК', en: 'FRONTEND/REACT DEVELOPER' }}/></div>
+                    <a href='rezume.pdf' download type="button" class="text-white bg-[#313bac] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-7 py-4 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"  ><Translate dictionary={{ ru: 'Скачать резюме', en: 'Downlaod CV' }} />Downlaod CV</a>
                 </div>
             </Flip>
             {/* gif for developer  */}

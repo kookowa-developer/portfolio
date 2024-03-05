@@ -8,8 +8,8 @@ const Skills = () => {
   return (
     <div className='h-auto md:h-[100vh] relative' id='skills'>
         <div className='font-bold flex gap-2 text-[35px] md:text-[50px] my-10 md:my-16 justify-center'>
-            <span className='' onClick={()=>setToggle(false)}><Translate dictionary={{ru:'Mои',en:'My'}}>My</span>
-            <span className='text-[#313bac]  'onClick={()=>setToggle(false)}><Translate dictionary={{ru:'Навыки',en:'Skills'}}>Skills</span>
+            <span className='' ><Translate dictionary={{ru:'Mои',en:'My'}}/></span>
+            <span className='text-[#313bac]  '><Translate dictionary={{ru:'Навыки',en:'Skills'}}/></span>
         </div>
         <div className='flex flex-wrap gap-5 md:gap-10  py-10 justify-center items-center w-[90%] md:w-[70%] m-auto'>
             {SkillsData.map((item)=>(
